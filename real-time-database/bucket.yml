@@ -1,4 +1,5 @@
 flows:
+  4c49e702-4277-4493-a4bc-5333890c4903: {ver: 1, file: real-time-database-ingest.snapshot}
   d307a9e1-f1b6-44d0-b888-34535c915b5f: {ver: 1, file: get-crypto-currency-stream.snapshot}
 layoutVer: 1
 bucketId: 5b7e6c21-aff1-43c6-a39d-a587c7690955
