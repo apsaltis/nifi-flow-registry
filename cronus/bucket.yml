@@ -2,5 +2,6 @@ flows:
   aa20c5b8-a626-4f26-a031-8c999a7d8750: {ver: 1, file: cronus-api.snapshot}
   6f0468cd-c88c-4ff4-9814-6823f8ce854c: {ver: 1, file: cronus-ingest.snapshot}
   69786d82-7602-4086-bf1b-3ee1b1586e3d: {ver: 1, file: metadata-management.snapshot}
+  84f58262-1f81-4b46-9e5c-a830e467cdf7: {ver: 1, file: real-time-database-ingest.snapshot}
 layoutVer: 1
 bucketId: 0d6046e3-cc0e-46cb-898c-43357152d39a
