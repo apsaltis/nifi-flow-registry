@@ -13,60 +13,6 @@
       "destination" : {
         "comments" : "",
         "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
-        "id" : "8bd06647-f948-3dd8-8780-976c2c969043",
-        "name" : "ExtractJSONAttributes",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "97b55f38-0cb2-3a7a-90aa-325f6b1969ad",
-      "identifier" : "915d5c24-2ef7-3156-ba4d-f90c7940ce6f",
-      "labelIndex" : 1,
-      "name" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
-        "id" : "ec8ad303-b036-3fee-94b6-5d2508256c4f",
-        "name" : "HTTP-Ingest",
-        "type" : "INPUT_PORT"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
-        "id" : "485a43d1-f7bf-3909-8a40-53a92f1efa8d",
-        "name" : "PutHDFS",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "97b55f38-0cb2-3a7a-90aa-325f6b1969ad",
-      "identifier" : "422d02cf-59f7-32d8-9140-259b8b7ebaa7",
-      "labelIndex" : 1,
-      "name" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "merged" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
-        "id" : "2eb15145-f32e-3c03-997e-ba2ff3c955c6",
-        "name" : "MergeContent",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
         "id" : "197d695c-4845-39d1-b244-766645493691",
         "name" : "ConvertTimeStampToISO",
         "type" : "PROCESSOR"
@@ -83,60 +29,6 @@
         "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
         "id" : "8bd06647-f948-3dd8-8780-976c2c969043",
         "name" : "ExtractJSONAttributes",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
-        "id" : "144134d4-5fd4-3eae-a01d-cded7d1bbc0a",
-        "name" : "MergeRecord",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "97b55f38-0cb2-3a7a-90aa-325f6b1969ad",
-      "identifier" : "5f7fa8cc-e9bf-3683-890b-1b7794972690",
-      "labelIndex" : 1,
-      "name" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "success" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
-        "id" : "dfcbc441-d69b-3f2d-82ae-c35248abb3d6",
-        "name" : "ConvertAttributesToHistorianEvent",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
-        "id" : "2eb15145-f32e-3c03-997e-ba2ff3c955c6",
-        "name" : "MergeContent",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "97b55f38-0cb2-3a7a-90aa-325f6b1969ad",
-      "identifier" : "ab44cc70-3819-324d-a7ab-e3eb9ed1e1bf",
-      "labelIndex" : 1,
-      "name" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "failure", "dropped" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
-        "id" : "f2433f60-3130-3b26-a845-ca81e3fe73c7",
-        "name" : "IngestHistorianRaw",
         "type" : "PROCESSOR"
       },
       "zIndex" : 0
@@ -202,13 +94,40 @@
       "destination" : {
         "comments" : "",
         "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
-        "id" : "144134d4-5fd4-3eae-a01d-cded7d1bbc0a",
-        "name" : "MergeRecord",
+        "id" : "f2433f60-3130-3b26-a845-ca81e3fe73c7",
+        "name" : "IngestHistorianRaw",
         "type" : "PROCESSOR"
       },
       "flowFileExpiration" : "0 sec",
       "groupIdentifier" : "97b55f38-0cb2-3a7a-90aa-325f6b1969ad",
-      "identifier" : "1b333f62-e732-33dd-80fb-f42ccb9bd0fc",
+      "identifier" : "b6ec5954-5afb-334a-a621-a1a0aba2bf9a",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "merged" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
+        "id" : "144134d4-5fd4-3eae-a01d-cded7d1bbc0a",
+        "name" : "MergeRecord",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
+        "id" : "8bd06647-f948-3dd8-8780-976c2c969043",
+        "name" : "ExtractJSONAttributes",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "97b55f38-0cb2-3a7a-90aa-325f6b1969ad",
+      "identifier" : "915d5c24-2ef7-3156-ba4d-f90c7940ce6f",
       "labelIndex" : 1,
       "name" : "",
       "prioritizers" : [ ],
@@ -216,9 +135,117 @@
       "source" : {
         "comments" : "",
         "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
-        "id" : "3b1d556b-668c-357e-a607-bacfe120d1e2",
-        "name" : "S2S-Ingest",
+        "id" : "ec8ad303-b036-3fee-94b6-5d2508256c4f",
+        "name" : "HTTP-Ingest",
         "type" : "INPUT_PORT"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
+        "id" : "485a43d1-f7bf-3909-8a40-53a92f1efa8d",
+        "name" : "PutHDFS",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "97b55f38-0cb2-3a7a-90aa-325f6b1969ad",
+      "identifier" : "422d02cf-59f7-32d8-9140-259b8b7ebaa7",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "merged" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
+        "id" : "2eb15145-f32e-3c03-997e-ba2ff3c955c6",
+        "name" : "MergeContent",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
+        "id" : "144134d4-5fd4-3eae-a01d-cded7d1bbc0a",
+        "name" : "MergeRecord",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "97b55f38-0cb2-3a7a-90aa-325f6b1969ad",
+      "identifier" : "5f7fa8cc-e9bf-3683-890b-1b7794972690",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
+        "id" : "dfcbc441-d69b-3f2d-82ae-c35248abb3d6",
+        "name" : "ConvertAttributesToHistorianEvent",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
+        "id" : "8bd06647-f948-3dd8-8780-976c2c969043",
+        "name" : "ExtractJSONAttributes",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "97b55f38-0cb2-3a7a-90aa-325f6b1969ad",
+      "identifier" : "b1c55ce8-5454-321c-bf5c-4b42413e09f8",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
+        "id" : "e149fc88-a009-3610-a326-4115bbbcd6fd",
+        "name" : "HTTPIngest",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
+        "id" : "2eb15145-f32e-3c03-997e-ba2ff3c955c6",
+        "name" : "MergeContent",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "97b55f38-0cb2-3a7a-90aa-325f6b1969ad",
+      "identifier" : "ab44cc70-3819-324d-a7ab-e3eb9ed1e1bf",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure", "dropped" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
+        "id" : "f2433f60-3130-3b26-a845-ca81e3fe73c7",
+        "name" : "IngestHistorianRaw",
+        "type" : "PROCESSOR"
       },
       "zIndex" : 0
     }, {
@@ -256,6 +283,33 @@
       "destination" : {
         "comments" : "",
         "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
+        "id" : "144134d4-5fd4-3eae-a01d-cded7d1bbc0a",
+        "name" : "MergeRecord",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "97b55f38-0cb2-3a7a-90aa-325f6b1969ad",
+      "identifier" : "1b333f62-e732-33dd-80fb-f42ccb9bd0fc",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
+        "id" : "3b1d556b-668c-357e-a607-bacfe120d1e2",
+        "name" : "S2S-Ingest",
+        "type" : "INPUT_PORT"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
         "id" : "9c28fb85-7a8e-34fe-9b47-ecbb6df45e86",
         "name" : "PutHDFS",
         "type" : "PROCESSOR"
@@ -272,33 +326,6 @@
         "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
         "id" : "38cddc4f-681d-3e31-91c4-3261642a6355",
         "name" : "MergeContent",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
-        "id" : "f2433f60-3130-3b26-a845-ca81e3fe73c7",
-        "name" : "IngestHistorianRaw",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "97b55f38-0cb2-3a7a-90aa-325f6b1969ad",
-      "identifier" : "b6ec5954-5afb-334a-a621-a1a0aba2bf9a",
-      "labelIndex" : 1,
-      "name" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "merged" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "97b55f38-0cb2-3a7a-bd72-8edc4b36e40c",
-        "id" : "144134d4-5fd4-3eae-a01d-cded7d1bbc0a",
-        "name" : "MergeRecord",
         "type" : "PROCESSOR"
       },
       "zIndex" : 0
@@ -504,7 +531,7 @@
       "identifier" : "ec8ad303-b036-3fee-94b6-5d2508256c4f",
       "name" : "HTTP-Ingest",
       "position" : {
-        "x" : 832.2696164359513,
+        "x" : 1332.586938213295,
         "y" : 118.22688650813419
       },
       "type" : "INPUT_PORT"
@@ -1116,6 +1143,89 @@
       "schedulingStrategy" : "TIMER_DRIVEN",
       "style" : { },
       "type" : "org.apache.nifi.processors.standard.AttributesToJSON",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.0.3.2.0.0-520"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "97b55f38-0cb2-3a7a-90aa-325f6b1969ad",
+      "identifier" : "e149fc88-a009-3610-a326-4115bbbcd6fd",
+      "name" : "HTTPIngest",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 779.71834081014,
+        "y" : 0.6522402763366699
+      },
+      "properties" : {
+        "Base Path" : "contentListener",
+        "Max Unconfirmed Flowfile Time" : "60 secs",
+        "Return Code" : "200",
+        "Listening Port" : "8084",
+        "Authorized DN Pattern" : ".*"
+      },
+      "propertyDescriptors" : {
+        "Base Path" : {
+          "displayName" : "Base Path",
+          "identifiesControllerService" : false,
+          "name" : "Base Path",
+          "sensitive" : false
+        },
+        "SSL Context Service" : {
+          "displayName" : "SSL Context Service",
+          "identifiesControllerService" : true,
+          "name" : "SSL Context Service",
+          "sensitive" : false
+        },
+        "Max Unconfirmed Flowfile Time" : {
+          "displayName" : "Max Unconfirmed Flowfile Time",
+          "identifiesControllerService" : false,
+          "name" : "Max Unconfirmed Flowfile Time",
+          "sensitive" : false
+        },
+        "Max Data to Receive per Second" : {
+          "displayName" : "Max Data to Receive per Second",
+          "identifiesControllerService" : false,
+          "name" : "Max Data to Receive per Second",
+          "sensitive" : false
+        },
+        "Return Code" : {
+          "displayName" : "Return Code",
+          "identifiesControllerService" : false,
+          "name" : "Return Code",
+          "sensitive" : false
+        },
+        "Listening Port" : {
+          "displayName" : "Listening Port",
+          "identifiesControllerService" : false,
+          "name" : "Listening Port",
+          "sensitive" : false
+        },
+        "HTTP Headers to receive as Attributes (Regex)" : {
+          "displayName" : "HTTP Headers to receive as Attributes (Regex)",
+          "identifiesControllerService" : false,
+          "name" : "HTTP Headers to receive as Attributes (Regex)",
+          "sensitive" : false
+        },
+        "Authorized DN Pattern" : {
+          "displayName" : "Authorized DN Pattern",
+          "identifiesControllerService" : false,
+          "name" : "Authorized DN Pattern",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.ListenHTTP",
       "yieldDuration" : "1 sec"
     }, {
       "autoTerminatedRelationships" : [ "success", "failure" ],
